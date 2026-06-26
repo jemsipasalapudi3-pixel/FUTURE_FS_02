@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJIBT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><i class="fas fa-graduation-cap"></i> NJIBT</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#courses">courses</a></li>
+                <li><a href="#Faculty">Faculty</a></li>
+                <li><a href="#accredations">Accrediation/affliation</a></li>
+                 <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <!-- Login/Register Form Pop-up -->
+    <div class="login-form-container" id="form-container">
+        <i class="fas fa-times" id="close-form"></i>
+        
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form active">
+            <div class="form-tabs">
+                <button type="button" class="tab-btn active" onclick="toggleForm('login')">Login</button>
+                <button type="button" class="tab-btn" onclick="toggleForm('register')">Register</button>
+            </div>
+            <h3>LOGIN FORM</h3>
+            <input type="email" placeholder="enter your email" class="box" required>
+            <input type="password" placeholder="enter your password" class="box" required>
+            <div class="remember">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forget password?</a>
+            </div>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="auth-form">
+            <div class="form-tabs">
+                <button type="button" class="tab-btn" onclick="toggleForm('login')">Login</button>
+                <button type="button" class="tab-btn active" onclick="toggleForm('register')">Register</button>
+            </div>
+            <h3>REGISTER FORM</h3>
+            <input type="text" placeholder="enter your name" class="box" required>
+            <input type="email" placeholder="enter your email" class="box" required>
+            <input type="password" placeholder="enter your password" class="box" required>
+            <input type="password" placeholder="confirm your password" class="box" required>
+            <input type="submit" value="Register Now" class="btn">
+        </form>
+    </div>
+
+    <!-- Home / Hero Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>NEW JERUSALEM INTERNATIONAL BIBLE THEOLOGICAL COLLEGE<br</h3>
+            <p>Accrediated by National Theological Association -NTA</p>
+            <p><em>registration number 1521900111,Royal crescent,Newbury Park,Ilford London ,England IG27JZ</em></p>
+            
+            <a href="#" class="btn">get started</a>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects">
+        <h1 class="heading">We are providing Courses</h1>
+        <div class="box-container">
+            <div class="box"><i class="fas fa-bible"></i><h3>Diploma In Theology</h3><p>2 Years</p></div>
+            <div class="box"><i class="fas fa-bible"></i><h3>Bachelor of Theology</h3><p>3Years</p></div>
+            <div class="box"><i class="fas fa-bible"></i><h3>Master of Divinit</h3><p>2 Years</p></div>
+            <div class="box"><i class="fas fa-bible"></i><h3>Master Of Theology</h3><p>2 Years</p></div>
+            <div class="box"><i class="fas fa-bible"></i><h3>ph.D</h3><p>2 Years</p></div>
+            <div class="box"><i class="fas fa-bible"></i><h3>ph.D honors</h3><p>2 Years</p></div>
+        </div>
+    </section>
+    <section class="about-me-section" id="about">
+    <div class="about-me-container">
+        <h2 class="about-me-heading">About Us</h2>
+        <div class="about-me-line"></div>
+        <p class="about-me-text"><b>Welcome to New Jerusalem International Bible Theological College, a premier institution dedicated to equipping faithful servants of God with sound theological education, spiritual maturity, and practical ministry skills. Located in Kovvuru (Andhra Pradesh, India), our college serves as a global hub for theological excellence, anchoring students in biblical truth and preparing them to impact nations for Christ.
+
+We offer comprehensive academic programs—ranging from Certificate and Diploma courses to Bachelor of Theology, Master of Divinity, Master of Theology, and Doctor of Philosophy (Ph.D.)—designed to foster rigorous scholarship and a deep passion for the Gospel.
+
+Our Mission & Vision
+Our Vision: To be a globally recognized center of biblical learning that transforms lives, builds strong theological foundations, and sends empowered leaders into the global harvest field.
+
+Our Mission: To provide high-quality, accessible, and spirit-led theological training; to cultivate spiritual integrity and academic excellence; and to partner with international bodies to elevate the standards of ministry education in India and beyond.</b>
+        </p>
+    </div>
+</section>
+
+<section class="principal-message" id="principal-msg">
+    <div class="msg-container">
+        
+        <div class="msg-image-side">
+           <img src="ayyagaru.jpg.png" alt="Teacher">
+            <div class="principal-info">
+                <h3>Principal Name</h3>
+                <p>Principal / Dean</p>
+            </div>
+        </div>
+
+        <div class="msg-text-side">
+            <h2 class="section-title">Principal's Message</h2>
+            <div class="title-line"></div>
+            
+            <p class="welcome-note">Welcome to our institution.</p>
+            
+            <p class="message-p"><b>It is our privilege to partner with students who desire to deepen their understanding of God's Word and prepare for meaningful Christian service. Our commitment extends beyond academic instruction to the holistic development of every student through spiritual formation, mentorship, and ministry experience.</b>
+        
+            </p>
+            
+            <p class="message-p"><b>Whether you are preparing for pastoral ministry, missions, teaching, counseling, or leadership within the church, our programs are designed to equip you with biblical knowledge, theological understanding, and practical skills for effective service.
+            </p></b>
+            
+            <p class="message-p"><b>We invite you to become part of our learning community and join us in advancing God's mission throughout the world.</b>
+            
+            </p>
+            
+            <div class="closing-note">
+                <p>Grace and peace,</p>
+                <h4>Principal</h4>
+                <h4><b>Arch.Bishop.REV.MICHEAL BROWN</b></h4>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h1 class="heading">Courses</h1>
+        <div class="box-container">
+            <!-- Course 1 -->
+            <div class="box">
+                 <img src="photo6.jpg.png" alt="Teacher">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h3>Diploma programs</h3>
+                    <p><b>B.D.(Bachelor of Divinity)</b></p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <!-- Course 2 -->
+            <div class="box">
+                <img src="photo7.jpg.png" alt="Teacher">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Undergraduate Programms</h3>
+                    <p>Bachlor of Theology(B.Th)</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="box">
+                <img src="photo3.jpg.png" alt="Teacher">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h3>Postgraduate Programms</h3>
+                    <p>Master of Divinity(M.Div)</p>
+                    <p>Master of Theology(M.Th)</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="photo3.jpg.png" alt="Teacher">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h3>Doctoral Programms</h3>
+                    <p>Ph.D/ph.D in Biblical Studies</p>
+                    <p>Ph.D (Honors)</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section class="teachers">
+        <h1 class="heading">Leadership Team</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="photo1.jpg.png" alt="Teacher">
+                <h3>MICHAEL BROWM</h3>
+                <span>Director</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="photo2.jpg.png" alt="Teacher">
+                <h3>Charles Brown</h3>
+                <span>Dean</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="box">
+                 <img src="photo4.jpg.png" alt="Teacher">
+                <h3>Stanley Brown</h3>
+                <span>Register</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<div id="diplomaModal" class="custom-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('diplomaModal')">&times;</span>
+        
+        
+        <hr>
+        
+</div>
+    
+    <section class="teachers">
+        <h1 class="heading">Accrediation/affliation</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="nta.jpg.png" alt="Teacher">
+                <h3>NTA</h3>
+                <span>National theological associaltion</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="kiu.jpg.png" alt="Teacher">
+                <h3>KIU</h3>
+                <span>Kesmond International university</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="apqn.jpg.png" alt="Teacher">
+                <h3>APQN</h3>
+                <span>Asian pasific quality Network </span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            
+
+            <div class="box">
+                <img src="iso.jpg.png" alt="Teacher">
+                <h3>ISO</h3>
+                <span>iso</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="teachers">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> contacts</h1>
+        <div class="icons-container">
+            <div class="icons"><i class="fas fa-clock"></i><h3>opening hours :</h3><p>07:00am to 10:00pm</p></div>
+            <div class="icons"><i class="fas fa-phone"></i><h3>phone :</h3><p>+919490512197/9533825458</p></div>
+            <div class="icons"><i class="fas fa-envelope"></i><h3>email :</h3><p>@ucccministries1717
+
+</p></div>
+            <div class="icons"><i class="fas fa-map-marker-alt"></i><h3>address :</h3><p> ,I pangidi, Eaast Godavari ,Andhra Pradesh, india - 534342</p></div>
+        </div>
+
+        <div class="row">
+            <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+    <h3>send us message</h3>
+    <input type="text" name="name" placeholder="name" class="box" required>
+    
+    <input type="email" name="email" placeholder="email" class="box" required>
+    
+    <input type="number" name="phone" placeholder="phone" class="box" required>
+    
+    <textarea name="message" placeholder="message" class="box" cols="30" rows="10" required></textarea>
+    
+    <input type="submit" value="send message" class="btn">
+</form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h1 class="heading">Frequently Ask Questions</h1>
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-heading"><h3>How To Contact For Help?</h3><i class="fas fa-angle-down"></i></div>
+                <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error, natus ab vel distinctio magnam?</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading"><h3>What Is The Best Career In 2026?</h3><i class="fas fa-angle-down"></i></div>
+                <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error, natus ab vel distinctio magnam?</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-heading"><h3>How Much Fee For Web Development?</h3><i class="fas fa-angle-down"></i></div>
+                <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error, natus ab vel distinctio magnam?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-graduation-cap"></i> NJIBT</h3>
+                <p>new jerusalem international bible theological college</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a><a href="#about">about</a><a href="#courses">courses</a><a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#">help center</a><a href="#">ask questions</a><a href="#">send feedback</a><a href="#">privacy policy</a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+        </div>
+        <div class="credit"> created by <span>ms. Jemsi</span> | all rights reserved! </div>
+    </footer>
+
+    <!-- Form & Accordion Handle చేయడానికి JavaScript -->
+    <script>
+        // Login Pop-up Logic
+        let loginBtn = document.querySelector('#login-btn');
+        let formContainer = document.querySelector('#form-container');
+        let closeForm = document.querySelector('#close-form');
+
+        loginBtn.onclick = () => formContainer.classList.add('active');
+        closeForm.onclick = () => formContainer.classList.remove('active');
+
+        function toggleForm(formType) {
+            document.querySelectorAll('.auth-form').forEach(form => form.classList.remove('active'));
+            document.getElementById(`${formType}-form`).classList.add('active');
+        }
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.accordion').forEach(acc => {
+            acc.onclick = () => {
+                acc.classList.toggle('active');
+            }
+        });
+    </script>
+</body>
+</html>
+<b></b>
